@@ -13,6 +13,12 @@ public enum Status {
 	 * code : 100
 	 */
 	SUCCESS(100),
+	
+	/**
+	 * 请求成功
+	 * code : 100
+	 */
+	SUCCESS_EMPTY(101),
 	/**
 	 * 请求出错（客户端错误通用）
 	 * code : 600
@@ -23,16 +29,24 @@ public enum Status {
 	 * code : 610
 	 */
 	REQUEST_LACK(610),
+	REQUEST_LACK_1(611),
+	REQUEST_LACK_2(612),
+	REQUEST_LACK_3(613),
+	REQUEST_LACK_4(614),
+	REQUEST_LACK_5(615),
+	REQUEST_LACK_6(616),
 	/**
 	 * 请求参数校验不通过（参数值不为空，但为不允许的值，如用户名不重复）
-	 * code : 620
+	 * code : 630
 	 */
-	REQUEST_VALID(620),
+	REQUEST_VALID(630),
+	REQUEST_VALID_1(631),
+	REQUEST_VALID_2(632),
 	/**
 	 * 请求无权限
 	 * code : 630
 	 */
-	REQUEST_PERMISSION(630),
+	REQUEST_PERMISSION(650),
 	/**
 	 * 登录验证
 	 * code : 631
@@ -42,12 +56,12 @@ public enum Status {
 	 * 请求不存在的或者已被删除的数据
 	 * code : 640
 	 */
-	REQUEST_NOT_EXISTS(640),
+	REQUEST_NOT_EXISTS(600),
 	/**
 	 * 请求不存在的或者已被删除的数据
-	 * code : 641
+	 * code : 691
 	 */
-	REQUEST_NOT_FOUND(641),
+	REQUEST_NOT_FOUND(691),
 	/**
 	 * 系统错误（服务端错误）
 	 * code : 800
