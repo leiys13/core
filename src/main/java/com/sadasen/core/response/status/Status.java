@@ -44,24 +44,24 @@ public enum Status {
 	REQUEST_VALID_2(632),
 	/**
 	 * 请求无权限
-	 * code : 630
+	 * code : 650
 	 */
 	REQUEST_PERMISSION(650),
 	/**
+	 * 请求不存在的或者已被删除的数据
+	 * code : 670
+	 */
+	REQUEST_NOT_EXISTS(670),
+	/**
+	 * 请求不存在的或者已被删除的数据
+	 * code : 690
+	 */
+	REQUEST_NOT_FOUND(690),
+	/**
 	 * 登录验证
-	 * code : 631
+	 * code : 699
 	 */
-	REQUEST_NO_LOGIN(631),
-	/**
-	 * 请求不存在的或者已被删除的数据
-	 * code : 640
-	 */
-	REQUEST_NOT_EXISTS(600),
-	/**
-	 * 请求不存在的或者已被删除的数据
-	 * code : 691
-	 */
-	REQUEST_NOT_FOUND(691),
+	REQUEST_NO_LOGIN(699),
 	/**
 	 * 系统错误（服务端错误）
 	 * code : 800
