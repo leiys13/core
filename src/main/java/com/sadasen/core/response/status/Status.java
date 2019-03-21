@@ -47,6 +47,7 @@ public enum Status {
 	 * code : 650
 	 */
 	REQUEST_PERMISSION(650),
+	REQUEST_PERMISSION_BILL(659),
 	/**
 	 * 请求不存在的或者已被删除的数据
 	 * code : 670
